@@ -18,7 +18,21 @@ $(document).ready(function(e) {
         $(c[0]).text("Show more");
         $(c[1]).css("transform", "rotate(0deg)");
       }
-    })
+    });
+
+    $('.image-grid .card').click(function(e) {
+      e.stopPropagation();
+      $('.modal-bg').show();
+      $('.modal').show();
+      // console.log("card click");
+      // $(this).children().last().show();
+    });
+
+    $(window).click(function(e) {
+      // console.log("window click");
+      $('.modal').hide();
+      $('.modal-bg').hide();
+    });
 });
 
 //on scroll listener
@@ -40,6 +54,38 @@ $(document).scroll(function(e) {
           $('.section.hidden').css("opacity", "0");
           $('.rising-img').css("bottom", "-468px")
       }
+    }
+
+    console.log("making it here?");
+    console.log($('.home-page .section.portfolio-professional').length);
+
+    //changes element when on screen
+    if ($('.home-page .section.portfolio-professional')) {
+      if ($('.home-page .section.portfolio-professional').isOnScreen()) {
+          $('.home-page .section.portfolio-professional').css("opacity", "1");
+      } 
+      // else {
+      //     $('.section.porfolio-professional').css("opacity", "0");
+      // }
+    }
+
+    //changes element when on screen
+    if ($('.home-page .section.portfolio-meme')) {
+      if ($('.home-page .section.portfolio-meme').isOnScreen()) {
+          $('.home-page .section.portfolio-meme').css("opacity", "1");
+      } 
+      // else {
+      //     $('.section.porfolio-meme').css("opacity", "0");
+      // }
+    }
+
+    if ($('.home-page .section.merchandise-preview')) {
+      if ($('.home-page .section.merchandise-preview').isOnScreen()) {
+          $('.home-page .section.merchandise-preview').css("opacity", "1");
+      } 
+      // else {
+      //     $('.section.merchandise-preview').css("opacity", "0");
+      // }
     }
 });
 

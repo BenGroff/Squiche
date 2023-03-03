@@ -1,0 +1,156 @@
+/*-----------------*/
+/* Loading Styling */
+/*-----------------*/
+
+/* .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    height: 100vh;
+    width: 100vw;
+} */
+
+.content {
+    /* display: none; */
+    /* background-color: #212121;
+    color: #ffffff; */
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+html {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+
+
+/* Nav Styling */
+.nav {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+
+.nav > div {
+    margin-left: 16px;
+}
+
+.nav > div:first-of-type {
+    margin-left: 0px;
+}
+
+
+
+/* header styling */
+.header {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header div {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header .left {
+    justify-content: flex-start;
+}
+
+.header .center {
+    justify-content: center;
+}
+
+.header .right {
+    justify-content: flex-end;
+}
+
+.header .headshot {
+    height: 160px;
+    width: 180px;
+}
+
+.header .sticker {
+    width: 215px;
+    height: 115px;
+}
+
+
+
+/* title styling */
+.title {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 122px;
+    /* font-size: 175px; */
+    font-weight: 900;
+    /* text-decoration: underline; */
+}
+
+.title div {
+    width: auto;
+    text-align: center;
+    /* padding-bottom: 8px; */
+    border-bottom: 5px solid #ffffff;
+    margin-bottom: 32px;
+}
+
+
+
+/* Content body styling */
+.content-body .row {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.content-body .row .item {
+    margin: 8px;
+}
+
+.content-body .row .item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content-body .row.single {
+    grid-template-columns: 1fr;
+}
+
+.content-body .row.double {
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-body .row.triple {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-body .row.triple-left {
+    grid-template-columns: 34.5% 65.5%;
+}
+
+.content-body .row.triple-left .left {
+    grid-template-rows: 1fr 1fr;
+}
+
+.content-body .row.triple-right {
+    grid-template-columns: 65.5% 34.5%;
+}
+
+.content-body .row.triple-right .right {
+    grid-template-rows: 1fr 1fr;
+}
+
+/* .content-body .row.triple-left .left .item img {
+    max-height: 50%;
+    max-width: 50%;
+} */
+
+/* .wide {
+    grid-column: span 2;
+  } */
