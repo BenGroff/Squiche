@@ -17,6 +17,7 @@
     color: #ffffff; */
     margin-left: 16px;
     margin-right: 16px;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 .content-header {
@@ -29,6 +30,10 @@
 html {
     background-color: #212121;
     color: #ffffff;
+}
+
+body {
+    margin-bottom: 0px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -51,7 +56,7 @@ input, textarea {
 	border-radius: 0;
 	outline: none;
     margin-bottom: 8px;
-    width: 768px;
+    /* width: 768px; */
 }
 
 
@@ -146,7 +151,7 @@ input, textarea {
 
 /* title styling */
 .title {
-    font-family: 'Proxima Nova', sans-serif;
+    /* font-family: 'Proxima Nova', sans-serif; */
     font-size: 96px;
     /* font-size: 175px; */
     font-weight: 900;
@@ -176,10 +181,11 @@ input, textarea {
 /**********************/
 
 .content-body {
-    font-family: 'Proxima Nova', sans-serif;
+    /* font-family: 'Proxima Nova', sans-serif; */
 }
 
 .content-body .info {
+    margin-top: 64px;
     font-size: 40px;
     font-weight: 900;
     display: flex;
@@ -192,7 +198,7 @@ input, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 64px;
     margin-bottom: 128px;
 }
 
@@ -255,4 +261,121 @@ input, textarea {
 
 .content-body .row.triple-right .right {
     grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+/***************/
+/* Main footer */
+/***************/
+
+.main-footer {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 472px 1fr;
+    grid-template-rows: auto;
+}
+
+.main-footer .right {
+    padding-left: 48px;
+}
+@media (max-width: 1032px) {
+    .main-footer .right {
+        padding-left: 0px;
+    }
+}
+
+.main-footer .right {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.main-footer .right div div {
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.main-footer .right .section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.main-footer .socials {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.main-footer .socials a {
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* .footer-form form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+} */
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.footer-form form div {
+    display: flex;
+}
+
+.footer-form form div div:first-of-type {
+    margin-right: 16px;
+}
+
+.footer-form form div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form .footer-submit {
+    width: auto;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #212121;
+    font-size: 12px;
+    padding: 8px 0 8px 0;
+    cursor: pointer;
+}
+
+.footer-form label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+/* .footer-form .footer-submit {
+    grid-column: 1/-1;
+} */
+
+.slim-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #000000;
+}
+
+.slim-footer div {
+    padding: 12px;
+    font-size: 12px;
+}
+
+.fine-print {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.back-to-top {
+    cursor: pointer;
+    font-weight: 900;
 }
