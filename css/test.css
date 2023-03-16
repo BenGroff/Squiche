@@ -34,6 +34,7 @@ html {
 
 body {
     margin-bottom: 0px;
+    /* overflow: hidden; */
 }
 
 a, a:hover, a:focus, a:active {
@@ -77,6 +78,50 @@ input, textarea {
 
 .nav > div:first-of-type {
     margin-left: 0px;
+}
+
+.index-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.index-nav > .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-nav > .nav-logo > a > img {
+    height: 80px;
+    width: 304px;
+}
+
+.index-nav > .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-nav > .nav-links > div {
+    width: 104px;
+    margin: 0 12px 0 12px;
+}
+
+.index-nav > .nav-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.index-nav > .nav-contact > div {
+    color: #000000;
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    padding: 8px 16px;
 }
 
 /* .nav.stick {
@@ -175,6 +220,82 @@ input, textarea {
     /* font-size: 64px;
     width: 100%;
 } */
+/********************/
+/* CD Index styling */
+/********************/
+
+.content-body .stand-out {
+    margin-top: 64px;
+}
+
+.content-body .stand-out .big {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 90%;
+}
+
+.content-body .stand-out .small {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 100;
+}
+
+.content-body .device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.content-body .device div img {
+    width: 904px;
+    height: 658px;
+}
+
+.content-body .gallery-link {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-weight: 900;
+    padding: 80px 0;
+    margin-top: 64px;
+}
+
+.content-body .gallery-link:hover {
+    box-shadow: 0 0 16px #000000;
+}
+
+.content-body .gallery-link div {
+    text-align: center;
+}
+
+.content-body .bio {
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.content-body .bio div { 
+    margin-top: 32px;
+}
+
+.content-body .bio div:first-of-type { 
+    margin-top: 64px;
+}
+
+.content-body .bio .half {
+    width: 50%;
+}
+
+.content-body .bio .full {
+    margin-bottom: 64px;
+}
+
+
+
+
 
 /**********************/
 /* CD Contact styling */
@@ -269,6 +390,10 @@ input, textarea {
 /***************/
 /* Main footer */
 /***************/
+
+.content-footer {
+    margin-top: 64px;
+}
 
 .main-footer {
     display: grid;
