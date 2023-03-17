@@ -11,7 +11,15 @@ $(document).ready(async function(e) {
     let inputs = await $(".footer-form .inputs").children();
     width += $(inputs[0]).width();
     width += $(inputs[1]).width();
-    $(".footer-submit").css("width", `${width}px`)
+    $(".footer-submit").css("width", `${width}px`);
+
+    $(window).resize(async function(e) {
+        let width = 16;
+        let inputs = await $(".footer-form .inputs").children();
+        width += $(inputs[0]).width();
+        width += $(inputs[1]).width();
+        $(".footer-submit").css("width", `${width}px`);
+    });
 });
 
 //on scroll listener

@@ -15,16 +15,8 @@
     /* display: none; */
     /* background-color: #212121;
     color: #ffffff; */
-    margin-left: 16px;
-    margin-right: 16px;
+    /* margin: 0 16px; */
     font-family: 'Proxima Nova', sans-serif;
-}
-
-.content-header {
-    background-color: #212121;
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
 }
 
 html {
@@ -33,7 +25,7 @@ html {
 }
 
 body {
-    margin-bottom: 0px;
+    margin: 0px;
     /* overflow: hidden; */
 }
 
@@ -117,11 +109,30 @@ input, textarea {
     margin: 0 12px;
 }
 
-.index-nav > .nav-contact > div {
+.index-nav > .nav-contact > .pill {
     color: #000000;
     background-color: #d9d9d9;
     border-radius: 16px;
     padding: 8px 16px;
+}
+
+.index-nav > .nav-contact > .pill:hover {
+    box-shadow: 0 0 16px #000000;
+    cursor: pointer;
+}
+
+/* ben here */
+.mobile-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.mobile-nav div img {
+    height: 60px;
 }
 
 /* .nav.stick {
@@ -135,6 +146,14 @@ input, textarea {
 
 
 /* header styling */
+.content-header {
+    background-color: #212121;
+    margin: 8px 16px 0;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
 .header {
     font-family: 'Proxima Nova', sans-serif;
     font-size: 75px;
@@ -172,6 +191,10 @@ input, textarea {
 .header .sticker {
     width: 215px;
     height: 115px;
+}
+
+.mobile-title {
+    display: none;
 }
 
 /* .header.stick {
@@ -302,7 +325,7 @@ input, textarea {
 /**********************/
 
 .content-body {
-    /* font-family: 'Proxima Nova', sans-serif; */
+    margin: 0 16px;
 }
 
 .content-body .info {
@@ -393,6 +416,7 @@ input, textarea {
 
 .content-footer {
     margin-top: 64px;
+    margin: 0 16px;
 }
 
 .main-footer {
@@ -402,14 +426,23 @@ input, textarea {
     grid-template-rows: auto;
 }
 
+.main-footer .footer-title {
+    font-size: 40px; 
+    font-weight: 900;
+}
+
+.main-footer .footer-subtitle {
+    font-size: 20px;
+}
+
 .main-footer .right {
     padding-left: 48px;
 }
-@media (max-width: 1032px) {
+/* @media (max-width: 1032px) {
     .main-footer .right {
         padding-left: 0px;
     }
-}
+} */
 
 .main-footer .right {
     display: grid;
@@ -504,3 +537,111 @@ input, textarea {
     cursor: pointer;
     font-weight: 900;
 }
+
+.mobile-pills {
+    display: none;
+    margin: 0 16px 16px;
+}
+
+.mobile-pills a {
+    padding: 16px;
+    background-color: #d9d9d9;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 900;
+    border-radius: 32px;
+    margin-top: 16px;
+}
+
+/* Breakpoint Styling */
+
+/* Large displays */
+@media (min-width: 1440px) {
+
+}
+
+/* laptops */
+@media (min-width: 1024px) {
+    .main-footer .right {
+        padding-left: 0px;
+    }
+}
+
+/* ben here */
+/* tablets */
+@media (max-width: 768px) {
+    .nav, .header {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .title {
+        font-size: 35px;
+        margin: 0 24px;
+    }
+    .title div {
+        margin-bottom: 16px;
+        text-align: left;
+        border-bottom: none;
+    }
+    .content-header {
+        margin: 0;
+    }
+    .slim-footer {
+        display: none;
+    }
+    .content-footer div {
+        text-align: center;
+    }
+    .main-footer {
+        grid-template-columns: 1fr;
+        margin-top: 16px;
+    }
+    .main-footer .right {
+        display: none;
+    }
+    .main-footer .footer-title {
+        font-size: 30px; 
+        text-align: center;
+    }
+    .main-footer .footer-subtitle {
+        font-size: 10px;
+        text-align: center;
+    }
+    .footer-form {
+        display: flex; 
+        justify-content: center;
+    }
+    .footer-form label {
+        text-align: left;
+    }
+    .fine-print {
+        margin: 0 32px;
+    }
+    .mobile-pills {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* large mobile */
+@media (max-width: 425px) {
+    .footer-form label {
+        font-size: 8px;
+        text-align: left;
+    }
+    .footer-form input {
+        font-size: 16px;
+    }
+}
+
+/* medium mobile */
+/* @media (min-width: 375px) {
+
+} */
+
+/* small mobile */
+/* @media (max-width: 320px) {
+
+} */

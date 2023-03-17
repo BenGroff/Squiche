@@ -30,8 +30,64 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- mmenu css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css" rel="stylesheet">
+
     <!-- css file -->
     <link rel="stylesheet" href="css/test.css">
+
+    <!-- mmenu styling -->
+    <!-- <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu( "#menu", {
+                    extensions : ["theme-white", "pagedim-black", "position-front"],
+                    navbar : {
+                        title : "Streams"
+                    },
+                   "navbars": [
+                      {
+                         "position": "top",
+                         "content": [
+                            "breadcrumbs",
+                        	"close"
+                         ]
+                      }
+                   ]
+                });
+            }
+        );
+    </script>
+    <style>
+        .mm-navbar__breadcrumbs {
+            font-size: 28px;
+            font-weight: 600;
+            color: #666666 !important;
+            height: 62px;
+        }
+		.mm-btn_close:after {
+			right: 39px;
+		}
+		.mm-btn_close:before, .mm-btn_close:after {
+			width: 15px;
+			height: 15px;
+		}
+		.mm-btn:before, .mm-btn:after {
+			border-color: #666666;
+			border-width: 4px;
+		}
+		.mburger {
+			background-color: #fff;
+		}
+        @media (min-width: 1023px) {
+            #menu {
+                display: none !important;
+            }
+            .mburger {
+                display: none !important;
+            }
+        }
+    </style> -->
 
 </head>
 
@@ -48,6 +104,17 @@
 
     <div class="content">
         <div class="content-header">
+
+            <!-- Mobile nav -->
+            <div class="mobile-nav">
+                <div>
+                    <img src="images/designLabsStickerCombo-nobg.png">
+                </div>
+                <div style="font-size: 32px;">
+                    III
+                </div>
+            </div>
+
             <!-- Top nav -->
             <div class="nav stick">
                 <div>
@@ -174,21 +241,18 @@
         </div>
 
         <!-- Footer -->
-        <!-- Footer -->
         <div class="content-footer">
+            <div class="mobile-pills">
+                <a href="./index.html">PRODUCTS</a>
+                <a href="./work.html">CLIENT WORK</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
             <div class="main-footer">
                 <div class="left">
-                    <div style="font-size: 40px; font-weight: 900;">STAY UP TO DATE.</div>
-                    <div style="font-size: 20px;">SIGN UP FOR THE LATEST DROPS & UPDATES</div>
+                    <div class="footer-title">STAY UP TO DATE.</div>
+                    <div class="footer-subtitle">SIGN UP FOR THE LATEST DROPS & UPDATES</div>
                     <div class="footer-form">
-                        <!-- <form action=""> 
-                            <label for="footer-email">EMAIL</label>
-                            <label for="footer-bday">BIRTHDAY</label>
-                            <div><input type="email" id="footer-email" name="email" size="25"></div>
-                            <div><input type="date" id="footer-bday" name="birthday" value="1969-04-20" /></div>
-                            <input class="footer-submit" type="submit" value="SIGN UP">
-                        </form> -->
-                        <form action=""> <!-- will put php email script here -->
+                        <form action="">
                             <div class="inputs">
                                 <div><label for="footer-email">EMAIL</label><input type="email" id="footer-email" name="email" size="25"></div>
                                 <div><label for="footer-bday">BIRTHDAY</label><input type="date" id="footer-bday" name="birthday" value="1969-04-20" /></div>
@@ -197,7 +261,6 @@
                         </form>
                     </div>
                     <div class="fine-print">This site is intended for US customers. By signing up, you understand and agree that your data will be collected and used subject to our US Privacy Policy & Terms of Use </div>
-                    <div class="fine-print">*Required information</div>
                     <div class="socials">
                         <a href="https://www.facebook.com/slonkdoinks" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/squiche/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -206,7 +269,6 @@
                         <a href="" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
                         <a href="" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
                         <a href="https://open.spotify.com/artist/15tb0CDtwgUdKUINjtZvkt?si=MaX055-8T2yOnqpZm8vDLg" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                        <!-- <a href=""><i class="fa-brands fa-spotify"></i></a> -->
                     </div>
                 </div>
                 <div class="right">
@@ -250,7 +312,13 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> <!-- jQuery -->
     <script src="https://kit.fontawesome.com/7e03a0f539.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"></script> <!-- mmenu js -->
     <!-- <script src="js/scripts.js"></script> Main JS -->
     <script src="js/test.js"></script> <!-- testing JS -->
+
+    <!-- <nav id="menu">
+        <ul>
+        </ul>
+    </nav> -->
 </body>
 </html>
