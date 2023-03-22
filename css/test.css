@@ -236,6 +236,10 @@ input, textarea {
     margin-bottom: 32px;
 }
 
+.title .title-mobile {
+    display: none;
+}
+
 
 /* .title.stick {
     position: relative; */
@@ -556,12 +560,12 @@ input, textarea {
 /* Breakpoint Styling */
 
 /* Large displays */
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
 
-}
+} */
 
 /* laptops */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .main-footer .right {
         padding-left: 0px;
     }
@@ -634,14 +638,30 @@ input, textarea {
     .footer-form input {
         font-size: 16px;
     }
+    .title .title-mobile {
+        display: block;
+    }
+    .title .title-regular {
+        display: none;
+    }
 }
 
 /* medium mobile */
-/* @media (min-width: 375px) {
-
-} */
+@media (max-width: 375px) {
+    .footer-form input {
+        font-size: 12px;
+    }
+    .main-footer .socials a {
+        font-size: 12px;
+        padding: 6px 10px;
+        margin-right: 4px;
+    }
+}
 
 /* small mobile */
 /* @media (max-width: 320px) {
-
+    .main-footer .socials a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
 } */
